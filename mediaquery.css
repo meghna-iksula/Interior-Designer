@@ -1,0 +1,81 @@
+
+/*changing width of elements acc to screen size*/
+@media only screen and (min-width: 1400px) {
+  .row,
+  .search-outer-div,
+  .form-map > .common-flexblock,
+  .services,
+  .footer-outer-div > .common-flexblock,
+  .copyright-block,
+  .hire-banner > .common-flexblock {
+    width: 1300px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .row,
+  .search-outer-div,
+  .form-map > .common-flexblock,
+  .services,
+  .footer-outer-div > .common-flexblock,
+  .copyright-block,
+  .hire-banner > .common-flexblock {
+    width: 1120px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .row,
+  .search-outer-div,
+  .form-map > .common-flexblock,
+  .services,
+  .footer-outer-div > .common-flexblock,
+  .copyright-block,
+  .hire-banner > .common-flexblock {
+    width: 940px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .row,
+  .search-outer-div,
+  .form-map > .common-flexblock,
+  .services,
+  .footer-outer-div > .common-flexblock,
+  .copyright-block,
+  .hire-banner > .common-flexblock {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .row,
+  .search-outer-div,
+  .form-map > .common-flexblock,
+  .services,
+  .footer-outer-div > .common-flexblock,
+  .copyright-block,
+  .hire-banner > .common-flexblock {
+    width: 520px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .row,
+  .search-outer-div,
+  .form-map > .common-flexblock,
+  .services,
+  .footer-outer-div > .common-flexblock,
+  .copyright-block,
+  .hire-banner > .common-flexblock {
+    width: 100%;
+    margin: 0 5%;
+  }
+
+  #search-form{
+    padding: 10px;
+  }
+  .form-label{
+    margin-bottom: 10px;
+  }
+}

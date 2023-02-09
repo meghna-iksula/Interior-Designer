@@ -1,0 +1,120 @@
+.explore-page {
+  margin-top: 50px;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.explore-details-block {
+  margin: 0 7% 5% 7%;
+  text-align: center;
+}
+
+.explore-details-block h2,
+.explore-incredible-block h2 {
+  margin-bottom: 30px;
+}
+
+.info-div {
+  margin: -16% 3% 5% 3%;
+  text-align: center;
+}
+
+.explore-details-block > img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 50px;
+}
+
+.info {
+  display: flex;
+  padding: 30px 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  border-radius: 6px;
+}
+
+.info-cell {
+  width: 100%;
+  font-size: 14px;
+}
+
+.info-cell > h4 {
+  font-size: 16px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+}
+
+h2,
+h4,
+.pagination h4,
+.pagination p {
+  color: rgb(33, 37, 41);
+}
+.info-cell > p {
+  color: grey;
+}
+
+.p-txt {
+  margin-top: 7%;
+  text-align: left;
+}
+
+.explore-incredible-block {
+  margin: 0 7%;
+}
+.explore-incredible-block > .txt {
+  padding-bottom: 50px;
+  text-align: left;
+  border-bottom: 0.1px solid rgba(128, 128, 128, 0.3);
+}
+
+/*Pagination part*/
+.pagination {
+  margin: 7% 7% 0 7%;
+  display: flex;
+}
+.explore-page > .common-flexblock > .common-flex-block1 {
+  padding: 0;
+  margin-right: 20px;
+}
+
+
+.pagination-left ,
+.pagination-right {
+  width: 100%;
+}
+
+.pagination-left img {
+  float: left;
+  margin-right: 10px;
+  border-radius: 6px;
+}
+.pagination-right img {
+  float: right;
+  margin-left: 10px;
+  border-radius: 6px;
+}
+.pagination-right > a {
+  float: right;
+}
+
+.left-page {
+  align-self: center;
+}
+
+@media only screen and (max-width: 1167px) {
+  .info {
+    flex-direction: column;
+  }
+  .info-div {
+    margin: 0 0 5% 0;
+    text-align: center;
+    background-color: rgb(232, 234, 235);
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  }
+  .info-cell {
+    margin-bottom: 10px;
+  }
+}

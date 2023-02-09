@@ -1,0 +1,80 @@
+/*Main page of all other pages except Home-page*/
+p {
+  font-size: 14px;
+}
+
+.main-page2 {
+  width: 100%;
+  padding: 180px 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.header-txt p{
+  color: rgb(255, 255, 255);
+  line-height: 2;
+  margin: 20px auto;
+}
+
+.line{
+  margin-bottom: 30px;
+}
+
+/*Services section*/
+.services-outer-div{
+  display: flex;
+  justify-content: center;
+}
+
+.services {
+  margin: -80px 0 120px;
+  display: flex;
+  border-radius: 8px;
+  flex-direction: row;
+}
+
+.service-content {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  padding: 40px 0;
+  margin: 0 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 1000px) {
+  .header-txt p{
+    width: 550px;
+  }
+  .services {
+    flex-direction: column;
+    background-color: rgb(253, 253, 253);
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .service-content {
+    margin:0 0 20px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+.main-page2 {
+  padding: 120px 0 120px 0;
+}
+.header-txt p{
+  width: auto;
+  margin: 20px;
+}
+}
+
+@media only screen and (min-width:850px) {
+  .header-txt p{
+    width: 700px;
+  }
+}
+
+/*Coloring the logo*/
+svg {
+  fill: rgb(255, 86, 91);
+}

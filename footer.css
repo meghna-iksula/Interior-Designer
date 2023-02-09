@@ -1,0 +1,182 @@
+/*Footer section*/
+footer {
+  background-color: rgb(254, 254, 254);
+  margin-top: 120px;
+}
+
+.footer-outer-div{
+  text-align: -webkit-center;
+}
+
+.footer-outer-div > .common-flexblock{
+  margin: 0;
+}
+
+.footer-block {
+  width: 100%;
+  text-align: left;
+}
+
+/*column widths of hire-banner footer*/
+.hire-banner-txt {
+  width: 80%;
+  padding-bottom: 0;
+}
+
+.hire-banner-link {
+  width: 20%;
+  padding-bottom: 0;
+}
+
+.footer-block > .common-flexblock {
+  margin: 0;
+}
+
+.footer-logo-para {
+  text-align: left;
+  width: 50%;
+}
+
+.footer-logo-para,
+.footer-details,
+.copyright-block {
+  font-size: 14px;
+}
+
+.copyright-block p,
+.copyright-block > .common-flexblock {
+  margin: 0;
+}
+
+.footer-details {
+  width: 100%;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+footer img {
+  margin-bottom: 30px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer h3 {
+  margin-bottom: 30px;
+}
+
+footer li {
+  margin-bottom: 20px;
+}
+
+button i{
+  color: rgb(128, 128, 128);
+}
+
+footer form {
+  border-bottom: 0.1px solid rgba(128, 128, 128, 0.1);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5px;
+}
+
+footer input,
+button,
+footer li > a {
+  padding: 5px;
+  background-color: rgb(254, 254, 254);
+  color: grey;
+  border: none;
+}
+
+.footer-block button {
+  text-align: end;
+}
+
+.copyright-block {
+  margin: 80px 0 0 0;
+  padding: 0 0 30px 0;
+}
+
+#top {
+  text-align: end;
+}
+
+#top i{
+  color: rgb(128, 128, 128);
+}
+
+footer svg {
+  fill: grey;
+}
+
+.hire-banner-txt > h2,
+.hire-banner-link > .explore-button {
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+}
+
+.hire-banner-link > .explore {
+  text-align: center;
+  float: right;
+  background-color: white;
+  color: rgb(255, 86, 91);
+  padding: 13px 30px;
+  border-radius: 7px;
+}
+
+.explore:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 86, 91);
+  transition-duration: 500ms;
+}
+
+.hire-banner {
+  background-color: rgb(40, 40, 36);
+  color: white;
+  margin: 150px 0 -60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hire-banner > .common-flexblock {
+  margin: 0;
+  padding: 50px 0;
+}
+
+@media only screen and (max-width:  1000px) {
+  .hire-banner > .common-flexblock > .hire-banner-txt,
+  .hire-banner > .common-flexblock > .hire-banner-link {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .hire-banner-link > .explore {
+    float: none;
+  }
+  .hire-banner-txt > h2 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width:  1000px) {
+  .footer-block {
+    width: 100%;
+  }
+  footer * {
+    text-align: center;
+  }
+  footer input{
+    text-align: left;
+  }
+  #top {
+    text-align: center;
+  }
+  .footer-logo-para {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

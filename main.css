@@ -1,0 +1,642 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::selection {
+  background-color: rgba(226, 70, 42, 0.7);
+  color: rgb(255, 255, 255);
+}
+
+/*Adding background image to page*/
+.index-page {
+  background-image: url(images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 840px;
+}
+
+.about-page {
+  background-image: url(images/lamp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 530px;
+}
+
+/*Navigation and header section*/
+header {
+  width: 100%;
+}
+
+nav {
+  height: 60px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  padding: 16px 0 16px 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+  display: block;
+  line-height: 52px;
+  margin-left: 60px;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+}
+
+/*Adding hover effect to links*/
+a:hover,
+.link-block *:hover {
+  color: rgb(255, 86, 91);
+  transition-duration: 300ms;
+}
+
+a.active {
+  color: rgb(255, 86, 91);
+  background: rgb(255, 255, 255);
+  padding: 13px 20px;
+  border-top: 5px solid rgb(255, 86, 91);
+  border-radius: 0 0 7px 7px;
+}
+
+/*Defining properties of check-button*/
+.checkbutton {
+  float: right;
+  font-size: 30px;
+  padding-top: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.checkbutton > i {
+  color: rgb(255, 255, 255);
+}
+
+#check {
+  display: none;
+}
+
+.main-page {
+  padding: 270px 0 400px 0;
+  justify-content: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.explore-button {
+  padding: 10px 0;
+  margin: 15px 0;
+}
+
+.explore {
+  color: rgb(255, 86, 91);
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+  padding: 12px 25px;
+  font-size: 14px;
+}
+
+.explore:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 86, 91);
+  transition-duration: 500ms;
+}
+
+.search-button:hover,
+.discover-link:hover {
+  background-color: rgb(33, 37, 41);
+  color: rgb(255, 255, 255);
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+
+/*Styling heading tags*/
+h1 {
+  font-size: 50px;
+  margin: 5px 0;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+i {
+  color: rgb(255, 86, 91);
+  font-style: normal;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(33, 37, 41);
+  display: block;
+  text-transform: uppercase;
+}
+
+h3,
+h4 {
+  text-transform: capitalize;
+  color: rgb(33, 37, 41);
+}
+
+h2 span {
+  color: rgb(33, 37, 41);
+}
+
+h6 {
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.line {
+  color: rgb(255, 86, 91);
+  padding: 0 0 0 100px;
+  position: relative;
+}
+
+h2.line::before {
+  height: 2px;
+  background-color: rgb(255, 86, 91);
+  content: "";
+  display: block;
+  width: 80px;
+  left: 0;
+  top: 26px;
+  position: absolute;
+}
+
+/*Main page form*/
+.search {
+  margin-top: -150px;
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-outer-div {
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  display: flex;
+   
+  padding: 15px 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+#search-form {
+  width: 100%;
+  padding: 40px;
+}
+
+.search-inner-div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.field-item {
+  display: inline-block;
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset * {
+  display: block;
+  width: 100%;
+  color: rgb(33, 37, 41);
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+fieldset > label {
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(33, 37, 41);
+}
+
+fieldset > input,
+select {
+  padding: 10px 15px;
+  color: rgb(33, 37, 41);
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+.form-select,
+.searchText {
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+/*Dimensions of form search button*/
+.div-button {
+  text-align: center;
+  margin: 10px 12px;
+}
+
+.search-button {
+  width: 100%;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  background: rgb(255, 86, 91);
+  border: none;
+  border-radius: 6px;
+}
+
+/*Two column section frame*/
+.explore-heading {
+  margin: 0 7% 30px 7%;
+}
+
+.common-flexblock {
+  display: flex;
+  flex-direction: row;
+  margin: 0 7% 120px;
+}
+
+.common-flex-block1 {
+  width: 100%;
+  margin-right: 50px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+.common-flex-block2 {
+  width: 100%;
+}
+
+.common-flex-block1 > a {
+  background-color: rgb(255, 86, 91);
+  color: rgb(255, 255, 255);
+  padding: 13px 25px;
+  border-radius: 7px;
+}
+/*Styling images of containers*/
+.common-flex-block1 > img,
+.common-flex-block2 > img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.common-flex-block1 > p {
+  padding: 30px 60px 50px 0;
+}
+
+.map-frame {
+  width: 100%;
+}
+
+.details-block {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0 30px 0;
+}
+
+.details-block > p {
+  font-size: 14px;
+}
+
+.header-block {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  color: rgb(33, 37, 41);
+  border-bottom: 0.1px solid rgba(128, 128, 128, 0.2);
+}
+
+.header-block > h3 {
+  font-size: 20px;
+}
+
+.date-block {
+  width: 250px;
+  display: block;
+  padding: 10px 0;
+}
+
+svg {
+  margin-right: 3px;
+}
+
+.link-block {
+  display: block;
+  padding: 10px 0;
+  font-weight: bold;
+  color: rgb(33, 37, 41);
+  font-size: 17px;
+}
+
+.link-block * {
+  color: rgb(33, 37, 41);
+  font-size: 17px;
+}
+
+.address-block {
+  float: left;
+  width: 250px;
+  padding-bottom: 10px;
+  align-items: baseline;
+}
+
+.date-block i,
+.address-block i,
+.footer-details i {
+  font-size: 18px;
+  color: rgb(128, 128, 128);
+  padding-right: 5px;
+}
+
+address {
+  display: inline;
+  font-style: normal;
+}
+
+.address-para-block {
+  padding: 20px 0;
+}
+
+.date-block,
+.address-block,
+.address-block + p,
+.common-flex-block1 > p {
+  color: rgb(128, 128, 128);
+  font-size: 14px;
+  line-height: 2;
+}
+
+.txt {
+  line-height: 2em;
+  color: rgb(128, 128, 128);
+  margin-bottom: 40px;
+}
+
+.form-map {
+  background: url("images/handimg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.map {
+  width: 100%;
+  height: 550px;
+  border: none;
+  border-radius: 6px;
+}
+
+/*Map and form section*/
+.form-map > .common-flexblock {
+  margin: 0;
+}
+
+#form2 {
+  background-color: rgb(255, 255, 255);
+  padding: 50px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.form-div {
+  display: flex;
+}
+
+.form-inputs {
+  margin-top: 25px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+  padding: 7px;
+  color: rgb(128, 128, 128);
+  border: 0.1px solid rgba(128, 128, 128, 0.2);
+}
+
+.form-div input {
+  width: 100%;
+  padding: 7px;
+  border-radius: 6px;
+  margin: 10px 0;
+  border: 0.1px solid rgba(128, 128, 128, 0.2);
+}
+
+.common-flex-block2 input {
+  width: 100%;
+}
+
+form .common-flex-block1 {
+  margin: 0 15px 0 0;
+  padding: 0;
+}
+
+.form-map > .common-flexblock > .common-flex-block1 {
+  margin: 0;
+  padding: 0;
+}
+
+#form2 button {
+  margin: 20px 0;
+  width: 100%;
+}
+
+/*Creating a media query for drop-down nav bar*/
+@media only screen and (max-width: 1000px) {
+  .checkbutton {
+    display: block;
+  }
+
+  .row {
+    position: relative;
+  }
+
+  nav ul {
+    position: absolute;
+    width: 100%;
+    top: 65px;
+    height: 0;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 8px;
+    padding: 0 2%;
+    margin: 0;
+  }
+
+  nav li {
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+
+  a:hover,
+  a.active {
+    border: none;
+    background: none;
+    color: rgb(255, 86, 91);
+  }
+
+  /*drop-down nav bar appears when check button is clicked*/
+  #check:checked ~ ul {
+    height: 264px;
+    background-color: rgb(40, 40, 36);
+  }
+
+  #check:checked ~ ul li {
+    border-bottom: 0.1px solid rgba(128, 128, 128, 0.2);
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .main-page {
+    padding: 180px 0 120px 0;
+  }
+  .index-page {
+    height: 600px;
+  }
+  h1 {
+    line-height: 1.2;
+  }
+  h2{
+    font-size: 22px;
+  }
+  .common-flexblock,
+  .search{
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .index-page {
+    height: 650px;
+  }
+}
+
+/*media query for search-form*/
+@media only screen and (max-width: 1000px) {
+  .search-inner-div {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .common-flexblock {
+    flex-direction: column;
+  }
+  .form-div {
+    flex-direction: column;
+  }
+  .map-frame {
+    margin-top: 50px;
+  }
+}
+
+/*changing width of elements acc to screen size*/
+@media only screen and (min-width: 1400px) {
+  .row,
+  .search-outer-div,
+  .form-map > .common-flexblock,
+  .services,
+  .footer-outer-div > .common-flexblock,
+  .copyright-block,
+  .hire-banner > .common-flexblock {
+    width: 1300px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .row,
+  .search-outer-div,
+  .form-map > .common-flexblock,
+  .services,
+  .footer-outer-div > .common-flexblock,
+  .copyright-block,
+  .hire-banner > .common-flexblock {
+    width: 1120px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .row,
+  .search-outer-div,
+  .form-map > .common-flexblock,
+  .services,
+  .footer-outer-div > .common-flexblock,
+  .copyright-block,
+  .hire-banner > .common-flexblock {
+    width: 940px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .row,
+  .search-outer-div,
+  .form-map > .common-flexblock,
+  .services,
+  .footer-outer-div > .common-flexblock,
+  .copyright-block,
+  .hire-banner > .common-flexblock {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .row,
+  .search-outer-div,
+  .form-map > .common-flexblock,
+  .services,
+  .footer-outer-div > .common-flexblock,
+  .copyright-block,
+  .hire-banner > .common-flexblock {
+    width: 520px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .row,
+  .search-outer-div,
+  .form-map > .common-flexblock,
+  .services,
+  .footer-outer-div > .common-flexblock,
+  .copyright-block,
+  .hire-banner > .common-flexblock {
+    width: 100%;
+    margin: 0 5%;
+  }
+
+  #search-form{
+    padding: 10px;
+  }
+  .form-label{
+    margin-bottom: 10px;
+  }
+}
